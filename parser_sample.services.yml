@@ -1,0 +1,9 @@
+parameters:
+    lexer.parser_sample.use_key_value_cache: true
+
+services:
+    parser_sample.parser_generator:
+        class: Drupal\parser_sample\Myparser\ParserGenerator
+        arguments:
+            - '@keyvalue'
+            - '%lexer.parser_sample.use_key_value_cache%'

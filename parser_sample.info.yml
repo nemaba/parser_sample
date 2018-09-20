@@ -1,0 +1,5 @@
+name: Parser sample
+type: module
+description: "My Parser Sample v1"
+package: Sample
+core: 8.x

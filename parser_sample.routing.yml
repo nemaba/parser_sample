@@ -1,0 +1,6 @@
+parsersample_says:
+    path: /parser_sample/parser/{input}
+    defaults:
+        _controller: Drupal\parser_sample\Controller\ParserController::parser
+    requirements:
+        _permission: 'access content'

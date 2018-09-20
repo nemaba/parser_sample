@@ -1,0 +1,15 @@
+{
+    "name": "nemaba/parser_sample",
+    "description": "A lexer and parser for mathematical expressions.",
+    "homepage": "https://github.com/nemaba/parser_sample",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nelson MB",
+            "email": "nmb@fastmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    }
+}
