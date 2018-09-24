@@ -1,0 +1,17 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function parser_sample_theme($existing, $type, $theme, $path)
+{
+    return [
+        'form_parser_sample_page' => [
+            'render element' => 'form_parser_sample_page_element',
+            'path' => $path . '/templates',
+            'template' => 'parser-sample-page',
+            'variables' => [
+                'input' => '0',
+            ],
+        ],
+    ];
+}

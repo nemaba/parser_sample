@@ -1,6 +1,15 @@
 parsersample_says:
+#    controller for test propose
     path: /parser_sample/parser/{input}
     defaults:
         _controller: Drupal\parser_sample\Controller\ParserController::parser
+    requirements:
+        _permission: 'access content'
+
+ajax_parser_sample.form:
+    path: '/parser_sample/form'
+    defaults:
+        _form: 'Drupal\parser_sample\Form\AjaxParserForm'
+        _title: 'Mathematical Lexer & Parser service'
     requirements:
         _permission: 'access content'

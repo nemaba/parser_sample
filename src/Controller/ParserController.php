@@ -37,7 +37,8 @@ class ParserController extends ControllerBase
         $result = $this->valueGenerator->getValue($input);
 
         return [
-            '#title' => $result
+            '#theme' => 'form_parser_sample_page',
+            '#input' => $result,
         ];
     }
 }
